@@ -95,5 +95,5 @@ if __name__ == '__main__':
                     timed_out_games = get_timed_out_game_in_board_for_user(username, timed_out_board["board"])
                     for game in timed_out_games:
                         game_url, game_start_time, game_end_time, color = get_game_details_for_user(username, game)
-                        row = f"{match_url}, {match_name}, {match_start}, {match_end}, {match_rules}, {match_time_class}, {match_time_control}, {username}, {color}, {game_url}, {game_start_time}, {game_end_time}\n"
+                        row = f"{match_url}, {match_name.replace(',', ' ')}, {match_start}, {match_end}, {match_rules}, {match_time_class}, {match_time_control}, {username}, {color}, {game_url}, {game_start_time}, {game_end_time}\n"
                         file.write(row)
