@@ -1,1 +1,1 @@
-python main.py
+python filtered_leaderboard.py %*
